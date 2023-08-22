@@ -1,0 +1,1 @@
+{"name":"Local: sumOfAllValues","url":"e:\\Comp-Prog\\sumOfAllValues.cpp","tests":[{"id":1692705149775,"input":"1\n123","output":"168"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Comp-Prog\\sumOfAllValues.cpp","group":"local","local":true}
