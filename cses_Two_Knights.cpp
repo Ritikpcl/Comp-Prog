@@ -2,6 +2,7 @@
 using namespace std;
 #define ll long long int
 
+
 void initCode() {
     ios_base :: sync_with_stdio(false);
     cin.tie(NULL);
@@ -9,29 +10,27 @@ void initCode() {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     #endif // ONLINE_JUDGE
-} 
+}
+
 
 void solve(){
-
-    initCode();
-
     ll n;
     cin>>n;
-
-    ll cnt = 0, k = n;
-    while(k){
-        k = k >> 1;
-        cnt++;
+    for(ll i=1; i<=n; i++){
+        ll x = 8*(i-1)*(i-2);
+        ll sq = i*i;
+        ll y = sq*(sq-1) - x;
+        cout<<y/2<<endl;
     }
-
-    ll x = (1 << (cnt-1));
-    ll ans = n*(n+1)/2 - x;
-
-    cout<<ans<<endl;
 }
 
 
 int main(){
+    initCode();
+    // ll t;
+    // cin>>t;
+    // while(t--){
         solve();
+    // }
     return 0;
 }
